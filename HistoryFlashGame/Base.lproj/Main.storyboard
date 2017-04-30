@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xpo-sg-ep7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,238 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tumblr_static_duaepldg6lckwc8g00sc40oc4" translatesAutoresizingMaskIntoConstraints="NO" id="xWk-yN-NOh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="0.38690732760000002" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfF-Rq-ME4">
+                                <rect key="frame" x="69" y="586" width="236" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="236" id="iMY-3l-udf"/>
+                                </constraints>
+                                <state key="normal" title="Start the History Challenge!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Rnx-T7-gp0" kind="show" id="hBI-SX-8CL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000 History Questions!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0u-7c-Aeb">
+                                <rect key="frame" x="16" y="72" width="343" height="23"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="0.38690732758620688" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xWk-yN-NOh" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="573-aO-Ht2"/>
+                            <constraint firstItem="cfF-Rq-ME4" firstAttribute="centerX" secondItem="xWk-yN-NOh" secondAttribute="centerX" id="JRU-xc-OTN"/>
+                            <constraint firstItem="W0u-7c-Aeb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="PEz-M0-gHm"/>
+                            <constraint firstAttribute="trailing" secondItem="xWk-yN-NOh" secondAttribute="trailing" id="TTi-Sh-kPT"/>
+                            <constraint firstItem="W0u-7c-Aeb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bgG-Rg-YeV"/>
+                            <constraint firstItem="xWk-yN-NOh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cph-zL-VET"/>
+                            <constraint firstItem="xWk-yN-NOh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="g3F-Tq-U20"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cfF-Rq-ME4" secondAttribute="bottom" constant="51" id="hAk-2w-RfO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W0u-7c-Aeb" secondAttribute="trailing" id="hsS-p5-sea"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="uY5-Cv-kX3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="964" y="36.431784107946029"/>
+        </scene>
+        <!--Flash Card View Controller-->
+        <scene sceneID="xrx-CJ-QJx">
+            <objects>
+                <viewController id="vAG-6q-fcP" customClass="FlashCardViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z7G-Q7-rXc"/>
+                        <viewControllerLayoutGuide type="bottom" id="La9-cu-qki"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qdR-qk-j7p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Questions:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfd-gQ-3s9">
+                                <rect key="frame" x="16" y="65" width="124" height="20.5"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Questions Remaining:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHG-69-4Mw">
+                                <rect key="frame" x="16" y="93.5" width="166.5" height="20.5"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="3aJ-5e-4bW">
+                                <rect key="frame" x="0.0" y="134" width="375" height="386"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Question Text View" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Y4M-xH-Kg6">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                        <color key="backgroundColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="0.4212553879" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2g-zl-IyJ">
+                                        <rect key="frame" x="135.5" y="178" width="104" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Submit Answer">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="userSubmitsAnswer:" destination="vAG-6q-fcP" eventType="touchUpInside" id="00t-wx-lhm"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Answer Text View" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dfq-76-1pj">
+                                        <rect key="frame" x="0.0" y="258" width="375" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Y4M-xH-Kg6" firstAttribute="leading" secondItem="Dfq-76-1pj" secondAttribute="leading" id="MvT-XT-5v6"/>
+                                    <constraint firstItem="Y4M-xH-Kg6" firstAttribute="leading" secondItem="3aJ-5e-4bW" secondAttribute="leading" id="iQ2-cf-zWv"/>
+                                    <constraint firstItem="V2g-zl-IyJ" firstAttribute="centerY" secondItem="3aJ-5e-4bW" secondAttribute="centerY" id="q0T-RV-rQ7"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="0.42125538793103451" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="CHG-69-4Mw" firstAttribute="top" secondItem="cfd-gQ-3s9" secondAttribute="bottom" constant="8" symbolic="YES" id="23z-YP-l4X"/>
+                            <constraint firstItem="3aJ-5e-4bW" firstAttribute="top" secondItem="CHG-69-4Mw" secondAttribute="bottom" constant="20" id="A3Y-Pi-cEG"/>
+                            <constraint firstItem="3aJ-5e-4bW" firstAttribute="leading" secondItem="qdR-qk-j7p" secondAttribute="leading" id="CHC-zf-g2g"/>
+                            <constraint firstItem="CHG-69-4Mw" firstAttribute="leading" secondItem="qdR-qk-j7p" secondAttribute="leadingMargin" id="Itn-iE-gTC"/>
+                            <constraint firstItem="CHG-69-4Mw" firstAttribute="leading" secondItem="cfd-gQ-3s9" secondAttribute="leading" id="Q5K-G3-ZpT"/>
+                            <constraint firstItem="La9-cu-qki" firstAttribute="top" secondItem="3aJ-5e-4bW" secondAttribute="bottom" constant="147" id="Zem-zf-dvF"/>
+                            <constraint firstAttribute="trailing" secondItem="3aJ-5e-4bW" secondAttribute="trailing" id="nsh-KT-CWv"/>
+                            <constraint firstItem="3aJ-5e-4bW" firstAttribute="top" secondItem="qdR-qk-j7p" secondAttribute="top" constant="134" id="sJp-fI-9fd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerTextView" destination="Dfq-76-1pj" id="CaP-tw-euz"/>
+                        <outlet property="questionTextView" destination="Y4M-xH-Kg6" id="J75-ws-gab"/>
+                        <outlet property="questionsRemainingLabel" destination="CHG-69-4Mw" id="0Lv-GK-Iti"/>
+                        <outlet property="submitAnswerButton" destination="V2g-zl-IyJ" id="UcW-T2-sCn"/>
+                        <outlet property="totalQuestionsLabel" destination="cfd-gQ-3s9" id="ugV-kF-XTH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eM6-Ak-m7S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2903" y="36"/>
+        </scene>
+        <!--Choose History Page-->
+        <scene sceneID="Ozk-SZ-lE0">
+            <objects>
+                <viewController id="Rnx-T7-gp0" customClass="ChooseHistoryPage" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Omi-do-d2u"/>
+                        <viewControllerLayoutGuide type="bottom" id="AG7-Hb-x8v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YUE-QE-Ok1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="yeD-yu-ll6">
+                                <rect key="frame" x="16" y="79" width="342" height="530"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eg-IZ-4XH">
+                                        <rect key="frame" x="0.0" y="0.0" width="342" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="🇺🇸 American History">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Df0-Nr-iwn">
+                                        <rect key="frame" x="0.0" y="100" width="342" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title=" 🇮🇷 Iranian History">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0iz-mX-6Jn">
+                                        <rect key="frame" x="0.0" y="200" width="342" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="🇮🇪 Irish History">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCZ-eM-wem">
+                                        <rect key="frame" x="0.0" y="300" width="342" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="🇲🇾 Malaysian History">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="vAG-6q-fcP" kind="show" id="8Ln-Wo-ksP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1S1-Vo-U3r">
+                                        <rect key="frame" x="0.0" y="400" width="342" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="🇵🇭 Philippine History">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0g-RP-oZi">
+                                        <rect key="frame" x="0.0" y="500" width="342" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="World History">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="0iz-mX-6Jn" secondAttribute="trailing" id="8Ub-HI-I1H"/>
+                                    <constraint firstAttribute="trailing" secondItem="WCZ-eM-wem" secondAttribute="trailing" id="I00-sG-O9B"/>
+                                    <constraint firstAttribute="trailing" secondItem="1S1-Vo-U3r" secondAttribute="trailing" id="YTN-Li-zZk"/>
+                                    <constraint firstAttribute="trailing" secondItem="M0g-RP-oZi" secondAttribute="trailing" id="Z95-nI-B46"/>
+                                    <constraint firstAttribute="trailing" secondItem="Df0-Nr-iwn" secondAttribute="trailing" id="ZLM-Ay-p2H"/>
+                                    <constraint firstAttribute="trailing" secondItem="2eg-IZ-4XH" secondAttribute="trailing" id="bUm-eR-ucb"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="0.38690732760000002" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="yeD-yu-ll6" firstAttribute="leading" secondItem="YUE-QE-Ok1" secondAttribute="leadingMargin" id="Rwt-R7-VyK"/>
+                            <constraint firstItem="yeD-yu-ll6" firstAttribute="top" secondItem="Omi-do-d2u" secondAttribute="bottom" constant="15" id="T15-JQ-DZJ"/>
+                            <constraint firstItem="yeD-yu-ll6" firstAttribute="centerX" secondItem="YUE-QE-Ok1" secondAttribute="centerX" id="lhm-Sh-mfL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e8D-Hc-dsa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1952.8" y="35.532233883058474"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2IX-Ss-hUk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xpo-sg-ep7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nOv-B4-l3a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="e9h-oq-6UB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ens-xa-O8k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-54" y="36"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tumblr_static_duaepldg6lckwc8g00sc40oc4" width="600" height="700"/>
+    </resources>
 </document>

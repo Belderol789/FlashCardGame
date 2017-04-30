@@ -13,6 +13,8 @@
 		523D0D591E7D0AA700AB6E52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523D0D571E7D0AA700AB6E52 /* Main.storyboard */; };
 		523D0D5B1E7D0AA700AB6E52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 523D0D5A1E7D0AA700AB6E52 /* Assets.xcassets */; };
 		523D0D5E1E7D0AA700AB6E52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523D0D5C1E7D0AA700AB6E52 /* LaunchScreen.storyboard */; };
+		523D0D671E7D0AE500AB6E52 /* FlashCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523D0D661E7D0AE500AB6E52 /* FlashCardViewController.m */; };
+		523D0D6A1E7D2AFB00AB6E52 /* WorldHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523D0D691E7D2AFB00AB6E52 /* WorldHistoryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		523D0D5A1E7D0AA700AB6E52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		523D0D5D1E7D0AA700AB6E52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		523D0D5F1E7D0AA700AB6E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		523D0D651E7D0AE500AB6E52 /* FlashCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashCardViewController.h; sourceTree = "<group>"; };
+		523D0D661E7D0AE500AB6E52 /* FlashCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashCardViewController.m; sourceTree = "<group>"; };
+		523D0D681E7D2AFB00AB6E52 /* WorldHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldHistoryViewController.h; sourceTree = "<group>"; };
+		523D0D691E7D2AFB00AB6E52 /* WorldHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorldHistoryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,10 @@
 				523D0D541E7D0AA700AB6E52 /* ViewController.h */,
 				523D0D551E7D0AA700AB6E52 /* ViewController.m */,
 				523D0D571E7D0AA700AB6E52 /* Main.storyboard */,
+				523D0D681E7D2AFB00AB6E52 /* WorldHistoryViewController.h */,
+				523D0D691E7D2AFB00AB6E52 /* WorldHistoryViewController.m */,
+				523D0D651E7D0AE500AB6E52 /* FlashCardViewController.h */,
+				523D0D661E7D0AE500AB6E52 /* FlashCardViewController.m */,
 				523D0D5A1E7D0AA700AB6E52 /* Assets.xcassets */,
 				523D0D5C1E7D0AA700AB6E52 /* LaunchScreen.storyboard */,
 				523D0D5F1E7D0AA700AB6E52 /* Info.plist */,
@@ -153,6 +163,8 @@
 				523D0D561E7D0AA700AB6E52 /* ViewController.m in Sources */,
 				523D0D531E7D0AA700AB6E52 /* AppDelegate.m in Sources */,
 				523D0D501E7D0AA700AB6E52 /* main.m in Sources */,
+				523D0D671E7D0AE500AB6E52 /* FlashCardViewController.m in Sources */,
+				523D0D6A1E7D2AFB00AB6E52 /* WorldHistoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
